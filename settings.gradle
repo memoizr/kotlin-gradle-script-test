@@ -1,0 +1,7 @@
+rootProject.name='kotlin-gradle'
+rootProject.buildFileName = 'build.gradle.kts'
+
+include ':bah', ':frodo'
+
+findProject(":bah").buildFileName = 'build.gradle.kts'
+findProject(":frodo").buildFileName = 'build.gradle.kts'
